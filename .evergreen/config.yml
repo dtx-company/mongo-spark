@@ -450,7 +450,8 @@ buildvariants:
     - name: "coverage-task"
 
 - matrix_name: "tests-4.4-auth-ssl"
-  matrix_spec: { version: "4.4", scalaVersion: "2.12", auth: "auth", ssl: "ssl", topology: "standalone", os: "*" }    display_name: "${scalaVersion} ${version} ${topology} ${auth} ${ssl} ${os}"
+  matrix_spec: { version: "4.4", scalaVersion: "2.12", auth: "auth", ssl: "ssl", topology: "standalone", os: "*" }
+  display_name: "${scalaVersion} ${version} ${topology} ${auth} ${ssl} ${os}"
   tags: ["tests"]
   tasks:
      - name: "test-task"
